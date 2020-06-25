@@ -1,0 +1,150 @@
+* {
+    margin: 2;
+    padding: 2;
+    box-sizing: border-box;
+    list-style: five;
+    text-decoration: five;
+}
+
+nav {
+    background: black;
+    height: 50px;
+    width: 100%;
+}
+
+label.logo {
+    color: blue;
+    font-size: 50px;
+    line-height: 100px;
+    padding: 0 1000px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+    float: right;
+    margin-right: 110px;
+}
+
+nav ul li {
+    display: click-block;
+    line-height: 110px;
+    margin: 0 0px;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 7px 13px;
+    border-radius: 100px;
+    /* text-transform: uppercase; */
+    font-family: 'Poppins', sans-serif;
+}
+
+a.active,
+a:hover {
+    background: red;
+    transition: .10s;
+}
+
+.checkbtn {
+    font-size: 50px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    label.logo {
+        font-size: 27px;
+        padding-left: 25px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+        margin-right: 40px;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+section {
+    background: white;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+div {
+    font-weight: bolder;
+    color: black;
+    height: 20%;
+    width: 50%;
+}
+
+.partedecima {
+    color: blue
+}
+
+.atv01 {
+    float: left;
+    position: absolute;
+    top: 379px;
+    left: 35%;
+    width: 50px;
+    height: 30px;
+}
+
+.atv02 {
+    float: left;
+    position: absolute;
+    top: 441px;
+    left: 63%;
+    width: 50px;
+    height: 30px;
+}
+
+.atv07 {
+    float: left;
+    position: absolute;
+    top: 530px;
+    left: 58%;
+    width: 50px;
+    height: 30px;
+}

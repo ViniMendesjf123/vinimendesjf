@@ -1,0 +1,82 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teste11.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <nav>
+        <marquee>
+            <font color="white" size=7>
+                SEJA BEM-VINDO
+            </font>
+        </marquee>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+        <label class="logo">ListaJava</label>
+        <ul>
+            <li><a href="Sobre.html">Sobre</a></li>
+            <li><a href="Faculdade.html">Faculdade</a></li>
+            <li><a href="Currículo.html">Currículo</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+            <li><a class="active" href="Lista.html">Lista Java</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <IMG SRC="https://cio.com.br/wp-content/uploads/2020/05/linguagem-programacao-Java.jpg" width="300" height="200">
+    <p>
+        <font size="5">
+            <br>
+            <h1> Perguntas: </h1>
+            <br>
+            <br> 01.Faça uma função para exibir uma mensagem. <br><br> 02.Faça uma função para exibir uma mensagem e solicitar que o usuário digite o nome. <br><br>05.Solicite ao usuário que digite 2 valores quaisquer, faça uma função para comparar qual
+            é o maior valor.<br><br>
+            <br>
+            <div class="atv01">
+                <button type="botão" onclick="Evento_1 ()"> Testar </button>
+                <script>
+                    function Evento_1() {
+                        alert('Boa noite!')
+                    }
+                </script>
+
+            </div>
+            <div class="atv02">
+                <button type="botão" onclick="Evento_2 ()"> Testar </button>
+                <script>
+                    function Evento_2() {
+                        type = "text/javascript"
+                        prompt("Digite seu nome");
+                    }
+                </script>
+            </div>
+            <div class="atv07">
+                <button type="botão" onclick="Evento_7()"> Testar </button>
+                <input type="number" id="num1"><br><input type="number" id="num2"><br>
+                <script>
+                    function Evento_7() {
+
+                        var n1 = document.getElementById("num1").value;
+                        var n2 = document.getElementById("num2").value;
+                        if (n1 < n2) {
+                            alert(n2 + " é maior que " + n1);
+                        } else if (n2 < n1) {
+                            alert(n1 + " é maior que " + n2);
+                        } else {
+                            alert("Os númereros são iguais");
+                        }
+                    }
+                </script>
+            </div>
+        </font>
+    </p>
+
+</body>
+
+</html>
